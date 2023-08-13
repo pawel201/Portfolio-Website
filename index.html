@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db72a913ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" class="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li> 
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Programmer/Web Developer</p>
+                <h1>Hi, I'm <span>Pawel</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about  -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/User.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae non doloremque neque, minus esse provident sequi. Optio impedit quasi veniam eaque laborum quis, eveniet suscipit dolor alias eum laudantium dignissimos facere doloremque excepturi reiciendis repudiandae molestiae maiores iste debitis? Tempora reprehenderit accusamus aut tenetur illo deserunt vitae in modi dolor natus, delectus magni quibusdam, totam, pariatur enim. Quam doloremque repellendus accusantium molestias maiores enim!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('achivements')">Achivements</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java Programming</span><br>Java Programmer</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Data Structure and Agorithm</span><br>DSA in Java Programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achivements">
+                        <ul>
+                            <li><span>5* coder </span><br>Hacker Rank<br>Java Programming</li>
+                            <li><span>250+ question solved</span><br>Geeks for Geeks</li>
+                            <li><span>600+ question solved</span><br>Codechef</li>
+                            <li><span>Data Structure and Agorithm</span><br>DSA in Java Programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Senior Secondary School</span><br>2020<br>S.A.D College Madhepura</li>
+                            <li><span>Bachelor Of Technology</span><br>Technocrats Institute of Technology</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pager"></i>
+                    <h2>Web Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quia doloremque minus laudantium quasi amet. Ipsam ipsa odio, sit exercitationem cupiditate voluptates, aut alias, praesentium ipsum vel expedita qui iste aliquam eos adipisci eius.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Java Coder</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quia doloremque minus laudantium quasi amet. Ipsam ipsa odio, sit exercitationem cupiditate voluptates, aut alias, praesentium ipsum vel expedita qui iste aliquam eos adipisci eius.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ---------------portfolio------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png" >
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>The app connects you to the talented people around the world.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png" >
+                <div class="layer">
+                    <h3>Weather-forcast Web App</h3>
+                    <p>This web application will you to find weather details of any city in the world.</p>
+                    <a href="https://pawel201.github.io/Weather-forcast/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png" >
+                <div class="layer">
+                    <h3>Online Shooping App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store </p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> pawelkumar000@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9117681220</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="www.linkedin.com/in/pawelkumar"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Images/resume dxc.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Pawel. Made with <i class="fa-solid fa-heart"></i> Classic Tutorial</p>
+    </div>
+</div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwt5dJvUM2qDO1nlPFyEpUWv-JqzgGV2YB_mUihq_qYHI-lwpifjFHtHmRXyLSNQ-7X/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
